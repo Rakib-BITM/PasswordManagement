@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:background="@drawable/main_bg"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".ui.MainActivity">
 
     <TextView
@@ -14,10 +13,44 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/_25sdp"
         android:gravity="center"
-        android:text="@string/password_management"
+        android:text="User Sign Up"
         android:textColor="@color/white"
         android:textSize="@dimen/_30ssp"
         android:fontFamily="@font/akronim"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/edit_bg"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:hint="First Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_8sdp"/>
+
+        <EditText
+            android:layout_width="398dp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:hint="Last Name"
+            android:textColor="@color/white"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_8sdp"
+            android:textColorHint="@color/white" />
+
+    </LinearLayout>
 
     <EditText
         android:id="@+id/u_email"
@@ -53,7 +86,8 @@
         android:layout_marginBottom="@dimen/_15sdp"
         android:background="@drawable/button_bg"
         android:fontFamily="@font/unlock"
-        android:text="@string/login"
+        android:layout_gravity="center_horizontal"
+        android:text="Sign up"
         android:onClick="userLogin"
         android:textColor="@color/black"
         android:textSize="@dimen/_25ssp" />
@@ -64,11 +98,10 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/registerTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Don't Have a Account! Please Sign Up"
-            android:onClick="userRegistration"
+            android:text="Already Have a Account! Please Login"
+            android:onClick="userLogin"
             android:textColor="@color/white"
             android:gravity="center"
             android:textSize="@dimen/_14ssp"/>
