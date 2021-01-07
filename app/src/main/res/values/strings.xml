@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PasswordManager</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_a_account_please">New user?.</string>
+    <string name="password_management">Password Management</string>
+</resources>
